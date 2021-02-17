@@ -1,6 +1,11 @@
 /****************** 전역설정 *******************/
 var idx = 0; // Home, Skills, Project (0,1,2)
 
+var typingBool = false; 
+var typingIdx = 0; 
+var liIndex = 0;
+var liLength = $(".typing-txt>ul>li").length;
+
 /****************** 이벤트등록 *****************/
 
 /* 서브 네비 */
@@ -18,33 +23,39 @@ function onNaviUp() {
 	console.log(idx);
 	if(idx > 0) {
 		$(".sub-navi-wrapper").addClass('active');
-		$(".mid-text-wrap h2.text").hide();
+		$(".mid-container").hide();
 	}
 	else {
 		$(".sub-navi-wrapper").removeClass('active');
-		$(".mid-text-wrap h2.text").show();
+		$(".mid-container").show();
 	}
 	
 
 }
 
 function onModalShow() {
-	//$(".modal-container").stop().fadeIn();
 	$(".modal-container").addClass('active');
+	//$(".modal-container").stop().show();
 }
 
 function onModalHide() {
-	$(".modal-container").stop().fadeOut();
+	$(".modal-container").removeClass('active');
+	//$(".modal-container").stop().fadeOut();
 }
 
 function onSubClick() {
 	var id = $(this).index();
 
+	for(var id=0; id<6; id++) {
+		if (id == 1 || id == 2 || id == 3 || id == 4 || id == 5 || id == 6) {
+			$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
+		} 
+
 /* 	if(id == 1) {
 		$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
 	} */
 
-		if (id == 1) {
+/* 		if (id == 1) {
 			$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
 		}else if(id == 2){
 			$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
@@ -54,11 +65,16 @@ function onSubClick() {
 			$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
 		}else if(id == 5){
 			$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
-		}
-		
+		} */
+	
 
-	
-	
+		}
+
 }
+
+
+
+
+
 
 /****************** 사용자함수 *******************/

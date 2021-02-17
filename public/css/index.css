@@ -20,18 +20,22 @@ border-radius: 20px; flex-direction: column; overflow: hidden;}
 .line-wrap .navi-box { width: 28em; height: 3.5em; border-radius: 0 0 30px 30px; background-color: rgb(237, 239, 243); position: absolute; top: 0; left: 50%; transform: translate(-50%); }
 
 /******** header *********/
-.header-wrap {display: flex; justify-content: space-between; align-items: center; padding: 1.25em 2em;}
-/* .header-wrap .logo-wrap {border: 1px solid #ccc; border-radius: 50%; overflow: hidden; margin-top: 1em;}
-.header-wrap .logo-wrap img{width: 45px; height: 45px; } */
+.header-wrap {display: flex; justify-content: space-between; align-items: center; padding: 0.5em 2em;}
+.header-wrap .logo-wrap {border: 1px solid #ccc; border-radius: 50%; overflow: hidden; margin-top: 1em;}
+.header-wrap .logo-wrap img{width: 45px; height: 45px; }
 
-
-.header-wrap .navi-wrap {z-index: 999;}
+.header-wrap .navi-wrap {z-index: 999; position: absolute; top: 1.25em; left: 50%; transform: translate(-50%); }
+.header-wrap .about-wrap {margin-right: 0.5em;}
 .navi-wrap .navi span {padding: 0 2.5em; text-align: center; align-items: center; font-weight: bold; cursor: pointer;}
 
 /******** mid-text-wrap *********/
-.mid-text-wrap {position: absolute; top: 40%; left: 50%; transform: translate(-50%, -40%); font-size: 1.75em; font-family: 'Sunflower', sans-serif; font-weight: lighter;}
+.mid-container {position: relative;}
+.mid-container .cd-wrapper{width: 500px; height: 500px; border-radius: 50%; background-color: transparent; border: 3px solid #eaeaea; position: absolute; top: 5em; left: 50%; transform: translate(-50%);}
+.mid-container .cd-wrapper .cd-wrap {width: 100px; height: 100px; border-radius: 50%; background-color: transparent; border: 3px solid #eaeaea; position: absolute; top: 0;
+	left: 0; position: absolute; top: 14em; left: 50%; transform: translate(-50%);}
 
-
+.text-wrap .text1{font-size: 5em; position: absolute; top: 2em; left: 1em;}
+.text-wrap .text2{font-size: 3em; position: absolute; top: 8em; left: 4em; }
 
 /******** sub-navi-wrapper *********/
 .sub-navi-wrapper {
@@ -72,9 +76,9 @@ transform-origin: center;
 
 .contact-wrap {position: absolute; top: 30%; left: 50%; transform: translate(-50%); text-align: center;}
 .contact-wrap div {padding: 1em; letter-spacing: 0.125em;}
-.contact-wrap .img-box {width: 3em; height: 3em; background-color: #f9f9f9; align-items: center; text-align: center; justify-content: center; display: inline-block; border-radius: 5px; margin-bottom: 2em;}
+.contact-wrap .img-box {width: 3em; height: 3em; background-color: #f9f9f9; align-items: center; text-align: center; justify-content: center; display: inline-block; border-radius: 5px;}
 
-
+.comment-box {width: 10em; height: 10em; background-color: #f9f9f9; display: inline-block; border-radius: 0.5em; color: #111; line-height: 1.2;}
 
 
 /******** 반응형 *********/
