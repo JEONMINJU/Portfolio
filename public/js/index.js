@@ -43,33 +43,29 @@ function onModalHide() {
 	//$(".modal-container").stop().fadeOut();
 }
 
+
+var oldId = 0;
 function onSubClick() {
 	var id = $(this).index();
 
-	for(var id=0; id<6; id++) {
-		if (id == 1 || id == 2 || id == 3 || id == 4 || id == 5 || id == 6) {
-			$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
-		} 
-
-/* 	if(id == 1) {
+	if (id == 1) {
 		$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
-	} */
-
-/* 		if (id == 1) {
-			$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
-		}else if(id == 2){
-			$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
-		}else if(id == 3){
-			$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
-		}else if(id == 4){
-			$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
-		}else if(id == 5){
-			$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
-		} */
-	
-
-		}
-
+	}
+	else if (id == 2) {
+		$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(120deg)');
+	}
+	else if (id == 3) {
+		$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(180deg)');
+	}
+	else if (id == 4) {
+		$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(240deg)');
+	}
+	else if (id == 5) {
+		$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(300deg)');
+	}
+	else if (id == 6) {
+		$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(0deg)');
+	}
 }
 
 

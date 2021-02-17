@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Circle</title>
+	<link rel="stylesheet" href="../css/all.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.wrapper {width: 100vw; height: 100vh; padding: 2%;}
+		.line-wrapper {width: 100%; height: 100%; border: 3px solid #222; border-radius: 20px; position: relative;}
+		.circle-wrapper {width: 300px; height: 300px; border: 4px solid #222; border-radius: 50%; position: absolute; bottom: -148px; left: calc(50% - 150px);}
+		.sub-navi {width: 100px; height: 188px; text-align: center; position: absolute; bottom: 0; left: calc(50% - 50px); top: -42px; transform-origin: center bottom;}
+		.sub-navi:nth-child(1) {transform: rotate(300deg);}
+		.sub-navi:nth-child(2) {transform: rotate(0deg);}
+		.sub-navi:nth-child(3) {transform: rotate(60deg);}
+		.sub-navi:nth-child(4) {transform: rotate(120deg);}
+		.sub-navi:nth-child(5) {transform: rotate(180deg);}
+		.sub-navi:nth-child(6) {transform: rotate(240deg);}
+		.sub-navi .title {height: 34px;}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="line-wrapper">
+			<div class="circle-wrapper">
+				<div class="sub-navi">
+					<div class="title">PUBLISHING</div>
+					<div class="dot">●</div>
+				</div>
+				<div class="sub-navi">
+					<div class="title">FRONT END</div>
+					<div class="dot">●</div>
+				</div>
+				<div class="sub-navi">
+					<div class="title">BACK END</div>
+					<div class="dot">●</div>
+				</div>
+				<div class="sub-navi">
+					<div class="title">BACK END</div>
+					<div class="dot">●</div>
+				</div>
+				<div class="sub-navi">
+					<div class="title">BACK END</div>
+					<div class="dot">●</div>
+				</div>
+				<div class="sub-navi">
+					<div class="title">BACK END</div>
+					<div class="dot">●</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

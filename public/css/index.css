@@ -15,7 +15,7 @@ a:link, a:visited, a:active, a:hover {color: inherit; text-decoration: none;}
 
 /******** 전체 *********/
 .main-wrapper {width: 100%; height: 100vh; background-color: transparent; position: relative; }
-.line-wrap {width: 97%; height: 95%; border: 3px solid #111; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+.line-wrap {width: 97%; height: 95%; border: 3px solid #111; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
 border-radius: 20px; flex-direction: column; overflow: hidden;}
 .line-wrap .navi-box { width: 28em; height: 3.5em; border-radius: 0 0 30px 30px; background-color: rgb(237, 239, 243); position: absolute; top: 0; left: 50%; transform: translate(-50%); }
 
