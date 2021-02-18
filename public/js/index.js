@@ -1,33 +1,35 @@
 /****************** 전역설정 *******************/
 var idx = 0; // Home, Skills, Project (0,1,2)
 
-var typingBool = false; 
+/* var typingBool = false; 
 var typingIdx = 0; 
 var liIndex = 0;
-var liLength = $(".typing-txt>ul>li").length;
+var liLength = $(".typing-txt>ul>li").length; */
 
 /****************** 이벤트등록 *****************/
 
 /* 서브 네비 */
 $(".navi-wrap span").click(onNaviUp);
-$(".sub-navi-wrapper > .sub-navi").click(onSubClick);
+$(".circle-wrapper > .sub-navi").click(onSubClick);
+/* 서브 네비 active color chg */
+$(".navi-wrap span").click(onNaviAct);
 
 /* 모달 */
-$(".header-wrap .about-wrap").click(onModalShow);
+$(".header-wrapper .about-wrap").click(onModalShow);
 $(".modal-wrap .modal-btn").click(onModalHide);
 
 
 /****************** 이벤트콜백 *******************/
 function onNaviUp() {
 	idx = $(this).index();
-	console.log(idx);
+	//console.log(idx);
 	if(idx > 0) {
-		$(".sub-navi-wrapper").addClass('active');
-		$(".mid-container").hide();
+		$(".circle-wrapper").addClass('active');
+		$(".main-wrapper").hide();
 	}
 	else {
-		$(".sub-navi-wrapper").removeClass('active');
-		$(".mid-container").show();
+		$(".circle-wrapper").removeClass('active');
+		$(".main-wrapper").show();
 	}
 	
 
@@ -49,27 +51,31 @@ function onSubClick() {
 	var id = $(this).index();
 
 	if (id == 1) {
-		$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(60deg)');
+		$(".circle-wrapper").css('transform', 'translateY(50%) rotate(-60deg)');
 	}
 	else if (id == 2) {
-		$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(120deg)');
+		$(".circle-wrapper").css('transform', 'rotate(-120deg)');
 	}
 	else if (id == 3) {
-		$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(180deg)');
+		$(".circle-wrapper").css('transform', 'rotate(60deg)');
 	}
 	else if (id == 4) {
-		$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(240deg)');
+		$(".circle-wrapper").css('transformY', 'rotate(-240deg)');
 	}
 	else if (id == 5) {
-		$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(300deg)');
+		$(".circle-wrapper").css('transformY', 'rotate(-300deg)');
 	}
 	else if (id == 6) {
-		$(".sub-navi-wrapper").css('transform', 'translateY(50%) rotate(0deg)');
+		$(".circle-wrapper").css('transformY', 'rotate(-360deg)');
 	}
 }
 
 
-
+function onNaviAct() {
+	idx = $(this).index();
+	$(".navi-wrap span").removeClass('active');
+	$(".navi-wrap span").eq(idx).addClass('active');
+}
 
 
 
