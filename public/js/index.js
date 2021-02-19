@@ -1,6 +1,9 @@
 /****************** 전역설정 *******************/
 var idx = 0; // Home, Skills, Project (0,1,2)
 
+var path = document.querySelector('.path');
+var length = path.getTotalLength();
+
 /* var typingBool = false; 
 var typingIdx = 0; 
 var liIndex = 0;
@@ -19,6 +22,8 @@ $(".header-wrapper .about-wrap").click(onModalShow);
 $(".modal-wrap .modal-btn").click(onModalHide);
 
 
+
+
 /****************** 이벤트콜백 *******************/
 function onNaviUp() {
 	idx = $(this).index();
@@ -26,10 +31,12 @@ function onNaviUp() {
 	if(idx > 0) {
 		$(".circle-wrapper").addClass('active');
 		$(".main-wrapper").hide();
+		$(".charger-wrapper").hide();
 	}
 	else {
 		$(".circle-wrapper").removeClass('active');
 		$(".main-wrapper").show();
+		$(".charger-wrapper").show();
 	}
 	
 
@@ -77,6 +84,9 @@ function onNaviAct() {
 	$(".navi-wrap span").eq(idx).addClass('active');
 }
 
+ function onFirstLineShow() {
+ $('.main-wrapper .first-line').addClass('active');
+}
 
 
 /****************** 사용자함수 *******************/
