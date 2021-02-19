@@ -88,7 +88,7 @@ a:hover {
 	transition: all .3s;
 	transform-origin: center;
 }
-.circle-wrapper.active {transform: translateY(-200px);}
+.circle-wrapper.active {transform: translateY(-150px);}
 
 .sub-navi {
 	width: 100px;

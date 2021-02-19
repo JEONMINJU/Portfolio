@@ -49,24 +49,24 @@ function onModalHide() {
 var oldId = 0;
 function onSubClick() {
 	var id = $(this).index();
-
-	if (id == 1) {
-		$(".circle-wrapper").css('transform', 'translateY(50%) rotate(-60deg)');
+	console.log(id);
+	if (id == 0) {
+		$(".circle-wrapper").css('transform', 'translateY(-50%) rotate(-120deg)');
+	}
+	else if (id == 1) {
+		$(".circle-wrapper").css('transform', 'translateY(-50%) rotate(-180deg)');
 	}
 	else if (id == 2) {
-		$(".circle-wrapper").css('transform', 'rotate(-120deg)');
+		$(".circle-wrapper").css('transform', 'translateY(-50%) rotate(-240deg)');
 	}
 	else if (id == 3) {
-		$(".circle-wrapper").css('transform', 'rotate(60deg)');
+		$(".circle-wrapper").css('transform', 'translateY(-50%) rotate(240deg)');
 	}
 	else if (id == 4) {
-		$(".circle-wrapper").css('transformY', 'rotate(-240deg)');
+		$(".circle-wrapper").css('transform', 'translateY(-50%) rotate(180deg)');
 	}
 	else if (id == 5) {
-		$(".circle-wrapper").css('transformY', 'rotate(-300deg)');
-	}
-	else if (id == 6) {
-		$(".circle-wrapper").css('transformY', 'rotate(-360deg)');
+		$(".circle-wrapper").css('transform', 'translateY(-50%) rotate(300deg)');
 	}
 }
 
