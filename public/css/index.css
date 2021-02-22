@@ -1,7 +1,7 @@
 /******** .main-wrapper *********/
 .main-wrapper { font-family: 'Fjalla One', sans-serif; margin-top: 8em; }
 .main-wrapper .main-wrap {
-	display: flex; align-items: center; 
+	display: flex; align-items: center;
 }
 .first-line {
 	width: 33.2%; height: 4px; background-color: #111;
@@ -40,7 +40,17 @@
 }
 
 .main-wrap .second-line { width: 380px; position: absolute; top: 4.5em; left: 15.75em;}
-.main-wrap .develop { font-size: 7.5em; position: absolute; top: 1.65em; left: 2.45em; }
+.main-wrap .develop { font-size: 7.5em; position: absolute; top: 1.65em; left: 2.45em; 	background-image: url(../img/text-bg4.jpg); background-size: 200%; background-position: right; animation-name: front; animation-delay: 4.5s; animation-fill-mode: forwards; animation-duration: 4.5s;
+	-webkit-background-clip: text; color: transparent; }
+	@keyframes develop {
+		0% {
+			background-position: right;
+		}
+	
+		100% {
+			background-position: left;
+		}
+	}
 
 
 
@@ -71,3 +81,15 @@
 .charger-wrapper .charger-body { width: 3.25em; height: 5em; background-color: #ccc; border-radius: 3px 3px 1px 1px; }
 .charger-wrapper .charger-line { width: 0.5em; height: 1.5em; background-color: #ccc; }
 
+
+
+/******** 반응형 *********/
+@media screen and (max-width:1199px) {}
+
+@media screen and (max-width:991px) {}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width:575px) {
+	
+}

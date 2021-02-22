@@ -141,10 +141,7 @@ ul{list-style:none;}
 		width: 20em;
 		height: 2.5em;
 	}
-	.header-wrapper .navi-wrap .navi > span {
+	.header-wrapper .navi-wrap .navi > a {
 		padding: 0 1em;
 	}
 }
-
-
-.skills-wrapper .html { width: 50px; }

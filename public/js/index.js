@@ -123,3 +123,6 @@ function typing(){
         }
     } 
 }  
+
+
+new WOW().init();

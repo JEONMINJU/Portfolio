@@ -10,6 +10,8 @@ $(".navi-wrap .skills").load("html/skills.html", function (){
 });
 $(".circle-wrapper > .sub-navi").click(onSubClick);
 
+$(".circle-wrapper .front").click(onFrontSkillsShow);
+/* $(".circle-wrapper .back").click(onBackSkillsShow); */
 
 /****************** 이벤트콜백 *******************/
 /* function onNaviUp() {
@@ -52,6 +54,16 @@ function onSubClick() {
 	}
 }
 
+function onFrontSkillsShow() {
+	$(".skills-wrapper .skills-wrap1").addClass('active');
+}
+
+/* function onBackSkillsShow() {
+	$(".skills-wrapper .skills-wrap2").addClass('active');
+} */
 
 /****************** 사용자함수 *******************/
 
+
+
+new WOW().init();
