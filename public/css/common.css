@@ -71,8 +71,8 @@ a:hover {
 
 .header-wrapper .logo-wrap {position: absolute; top: 1.5em; left: 2em;}
 .header-wrapper .navi-wrap {position: absolute; top: 1em; left: 50%; transform: translate(-50%); color: #888; }
-.header-wrapper .navi-wrap .navi > span {padding: 0 1.5em; cursor: pointer;}
-.header-wrapper .navi-wrap .navi > span.active {color: #f9f9f9;} 
+.header-wrapper .navi-wrap .navi > a {padding: 0 1.5em; cursor: pointer;}
+.header-wrapper .navi-wrap .navi > a.active {color: #f9f9f9;} 
 .header-wrapper .about-wrap {position: absolute; top: 1.5em; right: 2em;}
 
 
@@ -127,3 +127,24 @@ ul{list-style:none;}
 
 .modal-wrapper .copyright { text-align: center; padding-top: 4em; font-size: 0.625em;}
 
+
+
+/******** 반응형 *********/
+@media screen and (max-width:1199px) {}
+
+@media screen and (max-width:991px) {}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width:575px) {
+	.line-wrapper .line-head {
+		width: 20em;
+		height: 2.5em;
+	}
+	.header-wrapper .navi-wrap .navi > span {
+		padding: 0 1em;
+	}
+}
+
+
+.skills-wrapper .html { width: 50px; }

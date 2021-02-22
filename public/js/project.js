@@ -5,28 +5,13 @@ var idx = 0; // Home, Skills, Project (0,1,2)
 /****************** 이벤트등록 *****************/
 
 /* 서브 네비 */
-$(".navi-wrap .skills").load("html/skills.html", function (){
+$(".navi-wrap .project").load("html/project.html", function (){
 	$(".circle-wrapper").addClass('active');
 });
 $(".circle-wrapper > .sub-navi").click(onSubClick);
 
 
 /****************** 이벤트콜백 *******************/
-/* function onNaviUp() {
-	idx = $(this).index();
-
-	if(idx > 0) {
-		$(".circle-wrapper").addClass('active');
-		$(".main-wrapper").hide();
-		$(".charger-wrapper").hide();
-	}
-	else {
-		$(".circle-wrapper").removeClass('active');
-		$(".main-wrapper").show();
-		$(".charger-wrapper").show();
-	}
-} */
-
 
 var oldId = 0;
 function onSubClick() {
