@@ -160,7 +160,19 @@ a:hover {
 .top-wrap .battery-wrap {display: flex; justify-content: center; align-items: center;}
 .top-wrap .battery-wrap .battery-body{border: 3px solid #ccc; border-radius: 5px;}
 .top-wrap .battery-wrap .battery-head {width: 1em; height: 5em; background-color: #ccc; border-radius: 0 5px 5px 0; }
-.top-wrap .front {padding: 0.125em 0.2em; margin-top: 8px; font-size: 7.5em; margin-bottom: 0; line-height: 1; }
+.top-wrap .front {padding: 0.125em 0.2em; margin-top: 8px; font-size: 7.5em; margin-bottom: 0; line-height: 1;
+	background-image: url(../img/text-bg.jpg); background-size: 200%; background-position: right; animation-name: front; animation-delay: 2s; animation-fill-mode: forwards; animation-duration: 2s;
+	-webkit-background-clip: text; color: transparent;}
+
+@keyframes front {
+	0% {
+		background-position: right;
+	}
+
+	100% {
+		background-position: left;
+	}
+}
 
 
 .bottom-wrap .develop { font-size: 7.5em; padding-top: 0.25em; text-align: center; padding-left: 4.55em;}
