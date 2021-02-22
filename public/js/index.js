@@ -1,13 +1,6 @@
 /****************** 전역설정 *******************/
 var idx = 0; // Home, Skills, Project (0,1,2)
 
-/* var path = document.querySelector('.path');
-var length = path.getTotalLength(); */
-
-/* var typingBool = false; 
-var typingIdx = 0; 
-var liIndex = 0;
-var liLength = $(".typing-txt>ul>li").length; */
 
 /****************** 이벤트등록 *****************/
 
@@ -20,6 +13,9 @@ $(".navi-wrap span").click(onNaviAct);
 /* 모달 */
 $(".header-wrapper .about-wrap").click(onModalShow);
 $(".modal-wrapper .close-btn").click(onModalHide);
+$(".modal-container").click(onModalHide);
+$(".modal-wrapper").click(onModalWrapperClick);
+
 
 
 /****************** 이벤트콜백 *******************/
@@ -42,14 +38,15 @@ function onNaviUp() {
 
 function onModalShow() {
 	$(".modal-container").addClass('active');
-	//$(".modal-container").stop().show();
 }
 
 function onModalHide() {
 	$(".modal-container").removeClass('active');
-	//$(".modal-container").stop().fadeOut();
 }
 
+function onModalWrapperClick(e) {
+	e.stopPropagation();
+}
 
 var oldId = 0;
 function onSubClick() {
