@@ -5,9 +5,10 @@ var idx = 0; // Home, Skills, Project (0,1,2)
 /****************** 이벤트등록 *****************/
 
 /* 서브 네비 */
-$(".navi-wrap .project").load("html/project.html", function (){
+window.onload = function() {
 	$(".circle-wrapper").addClass('active');
-});
+}
+
 $(".circle-wrapper > .sub-navi").click(onSubClick);
 
 

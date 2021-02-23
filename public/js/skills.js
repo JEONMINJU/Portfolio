@@ -1,17 +1,20 @@
 /****************** 전역설정 *******************/
 var idx = 0; // Home, Skills, Project (0,1,2)
+var skillsIdx = 0;
 
 
 /****************** 이벤트등록 *****************/
 
-/* 서브 네비 */
-$(".navi-wrap .skills").load("html/skills.html", function (){
+window.onload = function() {
 	$(".circle-wrapper").addClass('active');
-});
+}
+
 $(".circle-wrapper > .sub-navi").click(onSubClick);
 
 $(".circle-wrapper .front").click(onFrontSkillsShow);
-/* $(".circle-wrapper .back").click(onBackSkillsShow); */
+$(".circle-wrapper .back").click(onBackSkillsShow);
+$(".circle-wrapper .design").click(onDesignSkillsShow);
+
 
 /****************** 이벤트콜백 *******************/
 /* function onNaviUp() {
@@ -28,6 +31,10 @@ $(".circle-wrapper .front").click(onFrontSkillsShow);
 		$(".charger-wrapper").show();
 	}
 } */
+
+function onNaviUp() {
+	$(".circle-wrapper").addClass('active');
+}
 
 
 var oldId = 0;
@@ -54,16 +61,48 @@ function onSubClick() {
 	}
 }
 
+
+
 function onFrontSkillsShow() {
-	$(".skills-wrapper .skills-wrap1").addClass('active');
+	idx = $(this).index();
+	if(idx = 1 && 4) {
+		$(".skills-wrapper .skills-wrap1").stop().fadeIn(300);
+		$(".skills-wrapper .skills-wrap2").stop().hide();
+	}
+	else {
+		$(".skills-wrapper .skills-wrap1").addClass('active');
+	}
 }
 
-/* function onBackSkillsShow() {
-	$(".skills-wrapper .skills-wrap2").addClass('active');
-} */
+function onBackSkillsShow() {
+	idx = $(this).index();
+	if(idx = 2 && 5) {
+		$(".skills-wrapper .skills-wrap2").stop().fadeIn(300);
+		$(".skills-wrapper .skills-wrap1").stop().hide();
+		$(".skills-wrapper .skills-wrap0").stop().hide();
+	}
+	else {
+		$(".skills-wrapper .skills-wrap2").addClass('active');
+	}
+}
+
+function onDesignSkillsShow() {
+	idx = $(this).index();
+	if(idx = 0 && 3) {
+		$(".skills-wrapper .skills-wrap0").stop().fadeIn(300);
+		$(".skills-wrapper .skills-wrap1").stop().hide();
+		$(".skills-wrapper .skills-wrap2").stop().hide();
+	}
+	else {
+		$(".skills-wrapper .skills-wrap0").addClass('active');
+	}
+}
+
+
+
+
+
 
 /****************** 사용자함수 *******************/
-
-
 
 new WOW().init();

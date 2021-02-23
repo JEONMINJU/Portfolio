@@ -138,10 +138,12 @@ ul{list-style:none;}
 
 @media screen and (max-width:575px) {
 	.line-wrapper .line-head {
-		width: 20em;
-		height: 2.5em;
+		width: 17em;
+		height: 2.75em;
 	}
 	.header-wrapper .navi-wrap .navi > a {
-		padding: 0 1em;
+		padding: 0 1em; font-size: 0.875em;
 	}
+	.header-wrapper .logo-wrap {left: 2em; font-size: 0.875em;}
+.header-wrapper .about-wrap {right: 2em; font-size: 0.875em;}
 }
