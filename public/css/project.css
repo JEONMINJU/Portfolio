@@ -1,11 +1,29 @@
+/******** common ********/
+h5 {
+	overflow: hidden;
+}
+
+h5:after {
+	content:"";
+	display: inline-block;
+	height: 0.6em;
+	vertical-align: bottom;
+	width: 100%;
+	border-top: 1px solid rgba(255, 255, 255, .5);
+}
+
 /******** slide-container(works) *********/
 .slide-container { display: flex; justify-content: center; text-align: center;}
-.slide-container .slide-wrapper {  background-color: #ccc; width: 700px; height: 450px;  border: 1px solid red; overflow: hidden; }
+.slide-container .slide-wrapper { width: 51em; height: 34em; border-radius: 3px; overflow: hidden;  /*  border: 1px solid red; */ }
 .slide-wrapper .slide-wrap { display: flex; justify-content: cnter; align-items: center; position: relative; }
-.slide-wrap .img-wrap .img-box .img-title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-.slide-wrapper .desc-wrap { width: 30%; height: 100%; border: 1px solid red; position: absolute; top: 0; right: 0; background-color: rgba(0, 0, 0, .4); }
-.slide-wrapper .desc-wrap .desc-box { }
+.slide-wrap .img-wrap .img-box .img-title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.25em; font-family: 'Sunflower', sans-serif; }
+.img-wrap .desc-wrap { width: 30%; height: 100%; position: absolute; top: 0; right: 0; background-color: rgba(0, 0, 0,.2); transform: translateX(100%); transition: all 0.5s; /* color: #f9f9f9;  */}
+.slide-wrap .img-wrap:hover .desc-wrap{ transform: translateX(0%);}
 
+.desc-wrap .desc-box { display: flex; flex-direction: column; text-align: left; padding: 1em; }
+.desc-wrap .desc-box > h5 { font-weight: bold; font-size: 1em; margin: 1em 0; }
+.desc-wrap .desc-box .descript { line-height: 1.7; margin-bottom: 1em; }
+.desc-wrap .desc-box .program { line-height: 1.5; margin-bottom: 1em; }
 
 
 /******** sub-navi-wrapper *********/
@@ -58,3 +76,22 @@
 	transform: rotate(240deg);
 }
 .sub-navi .title {height: 34px;}
+
+
+/******** project 반응형 *********/
+@media screen and (max-width:1199px) {
+
+}
+
+@media screen and (max-width:991px) {
+
+}
+
+@media screen and (max-width:767px) {
+	.slide-container { padding: 5%; }
+}
+
+@media screen and (max-width:575px) {
+	.slide-container { padding: 5%; }
+	.slide-wrap .img-wrap .img-box .img-title { font-size: 1em; }
+}

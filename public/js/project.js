@@ -9,6 +9,7 @@ window.onload = function() {
 }
 
 $(".circle-wrapper > .sub-navi").click(onSubClick);
+$(".slide-wrap .img-wrap").hover(onDescShow);
 
 
 /****************** 이벤트콜백 *******************/
@@ -36,6 +37,7 @@ function onSubClick() {
 		$(".circle-wrapper").css('transform', 'translateY(-50%) rotate(300deg)');
 	}
 }
+
 
 
 /****************** 사용자함수 *******************/
