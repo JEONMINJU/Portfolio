@@ -82,17 +82,17 @@ a:hover {
 
 .modal-container.active {transform: translate(-50%, -50%);}
 .modal-container .modal-wrapper {background-color: #fff; width: 30em; height: 40em; color: #111; position: absolute; top: 15%; left: 50%; transform: translate(-50%); padding: 2em; padding-top: 2.5em; border-radius: 3px; }
-.modal-wrapper .buttom-box {display: flex; justify-content: space-between; align-items: center; padding-bottom: 1em; }
+.modal-wrapper .buttom-box { position: absolute; top: 1.5em; right: 1.5em; }
 .modal-wrapper .close-btn { background-color: transparent; border: none; font-size: 1.5em; outline: none; }
 .modal-wrapper .close-btn:hover {color: rgb(47, 98, 180);}
-.modal-wrapper .aboutme { font-weight: bold; color: #333; }
+.modal-wrapper .aboutme { font-weight: bold; color: #333; font-size: 1.25em; text-align: center; }
 .modal-wrapper .back-btn { border: none; background-color: transparent; font-size: 1.5em; outline: none; }
 
 .modal-wrapper .contact-wrap { display: flex; flex-direction: column; justify-content: center; align-items: center;}
-.contact-wrap .contact { border: 1px solid #fbbaa2; width: 25em; height: 28em; border-radius: 5px; }
-.contact .name-box { display: flex; justify-content: space-between;}
-.name-box .deco-line {width: 100px; height: 3px; background-color: rgb(47, 98, 180); margin: 20px; border-radius: 3px;}
-.name-box .name { margin: 15px; font-size: 0.5em; }
+.contact-wrap .contact { border: 1px solid #333; width: 25em; height: 28em; border-radius: 5px; }
+.contact .name-box { display: flex; flex-direction: column; align-items: center;}
+.name-box .name { margin: 5px; font-size: 0.75em; padding-top: 2em; padding-bottom: 1em;}
+.name-box .deco-line {width: 50px; height: 3px; background-color:rgb(231, 131, 91); border-radius: 3px; }
 
 .contact .comment-box { width: 15em; height: 10em; background-color: #eaeaea; 
 display: flex; justify-content: center; margin-left: 5em; align-items: center; line-height: 1.7; border-radius: 5px; margin-top: 2em; flex-direction: column; position: relative; }
@@ -117,16 +117,15 @@ ul{list-style:none;}
   100%{border-right: 1px solid #fff} 
 }
 
-.contact .info-box { margin-top: 2em; text-align: center; }
-.info-box .phone img { width: 15px; margin-bottom: 3px; padding-right: 3px;}
+.contact .info-box { margin-top: 2em; align-items: left; margin-left: 5em; }
+.info-box .phone img { width: 17px; margin-bottom: 3px; padding-right: 5px;}
 .info-box .email {margin-top: 1em; }
-.info-box .email img { width: 16px; padding-right: 4px;}
-.info-box .git { font-size: 0.875em; padding-top: 4em; padding-bottom: 2em;}
-.info-box .deco-line2 { width: 50px; height: 3px; background-color: rgb(231, 131, 91); margin: auto; border-radius: 3px; }
-.info-box .study { position: absolute; top: 200px; left: -85px; transform: rotate(90deg); color: #888; font-size: 0.875em;}
-.info-box .certifi { position: absolute; top: 200px; right: -80px; transform: rotate(90deg); color: #888; font-size: 0.875em;}
+.info-box .email img { width: 18px; padding-right: 6px;}
+.info-box .git { font-size: 0.875em; margin-top: 1.625em; padding-bottom: 2.25em;}
+.info-box .git img { width: 20px; padding-right: 7px; margin-bottom: 3px;}
+.contact .deco-line { width: 50px; height: 3px; background-color:rgb(231, 131, 91); margin: auto; border-radius: 3px; display: block; }
 
-.modal-wrapper .copyright { text-align: center; padding-top: 4em; font-size: 0.625em;}
+.modal-wrapper .copyright { text-align: center; padding-top: 4em; font-size: 0.875em;}
 
 
 
@@ -146,5 +145,5 @@ ul{list-style:none;}
 		padding: 0 1em; font-size: 0.875em;
 	}
 	.header-wrapper .logo-wrap {left: 2em; font-size: 0.875em;}
-.header-wrapper .about-wrap {right: 2em; font-size: 0.875em;}
+	.header-wrapper .about-wrap {right: 2em; font-size: 0.875em;}
 }
