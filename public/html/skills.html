@@ -29,9 +29,9 @@
 		<!-- navi (depth 1) -->
 		<div class="navi-wrap">
 			<div class="navi">
-				<a href="http://127.0.0.1:5502/public/html/index.html#" class="home">Home</a>
-				<a href="http://127.0.0.1:5502/public/html/skills.html#" class="skills">Skills</a>
-				<a href="http://127.0.0.1:5502/public/html/project.html#" class="project">Project</a>
+				<a href="index.html" class="home">Home</a>
+				<a href="skills.html" class="skills active">Skills</a>
+				<a href="project.html" class="project">Project</a>
 			</div>
 		</div> 
 		<!-- 컨텍 modal -->
@@ -41,7 +41,7 @@
 	</header>
 	<!-- 프론트엔드 -->
 		<div class="skills-wrapper">
-			<div class="skills-wrap1">
+			<div class="skills-wrap" title="front">
 				<div class="skills-box">
 					<img src="../img/html-icon.png" alt="html" class="animate__animated animate__slideInLeft animate__delay-.4s">
 					<div class="skills-txt">HTML</div>
@@ -71,11 +71,7 @@
 					<div class="skills-txt">PUG</div>
 				</div>
 			</div>
-		</div>
-
-		<!-- 백엔드 -->
-		<div class="skills-wrapper">
-			<div class="skills-wrap2">
+			<div class="skills-wrap" title="back">
 				<div class="skills-box">
 					<img src="../img/node-icon.png" alt="html" class="animate__animated animate__slideInLeft animate__delay-.4s">
 					<div class="skills-txt">NODE</div>
@@ -89,10 +85,7 @@
 					<div class="skills-txt">MYSQL</div>
 				</div>
 			</div>
-		</div>
-		<!-- 디자인&기타 -->
-		<div class="skills-wrapper">
-			<div class="skills-wrap0">
+			<div class="skills-wrap" title="design">
 				<div class="skills-box">
 					<img src="../img/ps-icon.png" alt="html" class="animate__animated animate__slideInLeft animate__delay-.4s">
 					<div class="skills-txt">NODE</div>
@@ -116,31 +109,32 @@
 			</div>
 		</div>
 
+
 		<!-- sub-navi (depth2) -->
 		<div class="sub-navi-wrapper">
 			<div class="circle-wrapper">
 				<div class="sub-navi">
-					<div class="title design">Design & etc.</div>
+					<div class="title" data-skill="design">Design & etc.</div>
 					<div class="dot">●</div>
 				</div>
 				<div class="sub-navi">
-					<div class="title front">FRONT END</div>
+					<div class="title" data-skill="front">FRONT END</div>
 					<div class="dot">●</div>
 				</div>
 				<div class="sub-navi">
-					<div class="title back">BACK END</div>
+					<div class="title" data-skill="back">BACK END</div>
 					<div class="dot">●</div>
 				</div>
 				<div class="sub-navi">
-					<div class="title design">Design & etc.</div>
+					<div class="title" data-skill="design">Design & etc.</div>
 					<div class="dot">●</div>
 				</div>
 				<div class="sub-navi">
-					<div class="title front">FRONT END</div>
+					<div class="title" data-skill="front">FRONT END</div>
 					<div class="dot">●</div>
 				</div>
 				<div class="sub-navi">
-					<div class="title back">BACK END</div>
+					<div class="title" data-skill="back">BACK END</div>
 					<div class="dot">●</div>
 				</div>
 			</div>

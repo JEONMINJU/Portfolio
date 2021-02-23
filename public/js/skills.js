@@ -11,12 +11,19 @@ window.onload = function() {
 
 $(".circle-wrapper > .sub-navi").click(onSubClick);
 
-$(".circle-wrapper .front").click(onFrontSkillsShow);
-$(".circle-wrapper .back").click(onBackSkillsShow);
-$(".circle-wrapper .design").click(onDesignSkillsShow);
+$(".circle-wrapper .title").click(onSkill);
+$(".circle-wrapper .title").eq(1).trigger('click');
 
 
 /****************** 이벤트콜백 *******************/
+function onSkill() {
+	var name = $(this).data('skill');
+	$('.skills-wrap').css("display", "none");
+	$('.skills-wrap[title='+name+']').css("display", "flex");
+}
+
+
+
 /* function onNaviUp() {
 	idx = $(this).index();
 
@@ -60,44 +67,6 @@ function onSubClick() {
 		$(".circle-wrapper").css('transform', 'translateY(-50%) rotate(300deg)');
 	}
 }
-
-
-
-function onFrontSkillsShow() {
-	idx = $(this).index();
-	if(idx = 1 && 4) {
-		$(".skills-wrapper .skills-wrap1").stop().fadeIn(300);
-		$(".skills-wrapper .skills-wrap2").stop().hide();
-	}
-	else {
-		$(".skills-wrapper .skills-wrap1").addClass('active');
-	}
-}
-
-function onBackSkillsShow() {
-	idx = $(this).index();
-	if(idx = 2 && 5) {
-		$(".skills-wrapper .skills-wrap2").stop().fadeIn(300);
-		$(".skills-wrapper .skills-wrap1").stop().hide();
-		$(".skills-wrapper .skills-wrap0").stop().hide();
-	}
-	else {
-		$(".skills-wrapper .skills-wrap2").addClass('active');
-	}
-}
-
-function onDesignSkillsShow() {
-	idx = $(this).index();
-	if(idx = 0 && 3) {
-		$(".skills-wrapper .skills-wrap0").stop().fadeIn(300);
-		$(".skills-wrapper .skills-wrap1").stop().hide();
-		$(".skills-wrapper .skills-wrap2").stop().hide();
-	}
-	else {
-		$(".skills-wrapper .skills-wrap0").addClass('active');
-	}
-}
-
 
 
 

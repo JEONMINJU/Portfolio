@@ -8,6 +8,8 @@
 	animation: first-line;
 	animation-delay: 1s; /* 시작 전 대기 시간 */
 	animation-duration: 1s; /* 애니메이션의 총 시간 */
+	animation-fill-mode: forwards;
+	transform: translateX(-100%);
 }
 @keyframes first-line {
 	0% {

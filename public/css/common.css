@@ -72,7 +72,8 @@ a:hover {
 .header-wrapper .logo-wrap {position: absolute; top: 1.5em; left: 2em;}
 .header-wrapper .navi-wrap {position: absolute; top: 1em; left: 50%; transform: translate(-50%); color: #888; }
 .header-wrapper .navi-wrap .navi > a {padding: 0 1.5em; cursor: pointer;}
-.header-wrapper .navi-wrap .navi > a.active {color: #f9f9f9;} 
+.header-wrapper .navi-wrap .navi > a.active {color: #f9f9f9;}
+.header-wrapper .navi-wrap .navi > a:hover {color: #f9f9f9;}
 .header-wrapper .about-wrap {position: absolute; top: 1.5em; right: 2em;}
 
 

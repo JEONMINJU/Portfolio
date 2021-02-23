@@ -1,10 +1,10 @@
 /******** skills-wrapper *********/
 /* frontend skills */
 .skills-wrapper { text-align: center; display: flex; justify-content: center; align-items: center; position: relative; }
-.skills-wrapper .skills-wrap1 { width: 400px; padding-top: 2em; display: flex; flex-wrap: wrap; justify-content: center; position: absolute; top: 5em; left: 50%; transform: translate(-50%); opacity: 1; /* display: none; */ } 
-.skills-wrapper .skills-wrap1.active { opacity: 0; /* display: block; */ }
-.skills-wrapper .skills-wrap1 .skills-box {display: flex; flex-direction: column; justify-content: center; align-items: center; }
-.skills-wrapper .skills-wrap1 .skills-box img { width: 100px; padding: 15px; padding-top: 30px; }
+.skills-wrapper .skills-wrap { width: 400px; padding-top: 2em; flex-wrap: wrap; justify-content: center; position: absolute; top: 5em; left: 50%; transform: translate(-50%); opacity: 1; display: none; }
+.skills-wrapper .skills-wrap.active { opacity: 0; /* display: block; */ }
+.skills-wrapper .skills-wrap .skills-box {display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.skills-wrapper .skills-wrap .skills-box img { width: 100px; padding: 15px; padding-top: 30px; }
 
 /* backend skills */
 .skills-wrapper .skills-wrap2 { width: 400px; padding-top: 2em; display: flex; flex-wrap: wrap; justify-content: center; position: absolute; top: 5em; left: 50%; transform: translate(-50%); opacity: 1; display: none; }
