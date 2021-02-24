@@ -15,10 +15,10 @@ h5:after {
 
 /******** slide-container(works) *********/
 .slide-container { display: flex; justify-content: center; text-align: center; }
-.slide-container .slide-wrapper { width: 51em; height: 34em; border-radius: 3px; overflow: hidden;/*  border: 1px solid red; */ }
-.slide-wrapper .slide-wrap { display: flex; justify-content: cnter; align-items: center; position: relative; }
+.slide-container .slide-wrapper { width: 70%; border-radius: 3px; overflow: hidden; border: 1px solid red; }
+.slide-wrapper .slide-wrap { display: flex; justify-content: center; align-items: center; position: relative; }
 .slide-wrap .img-wrap .img-box .img-title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.25em; font-family: 'Sunflower', sans-serif; }
-.img-wrap .desc-wrap { width: 30%; height: 100%; position: absolute; top: 0; right: 0; background-color: rgba(0, 0, 0,.2); transform: translateX(105%); transition: all 0.5s; /* color: #f9f9f9;  */}
+.img-wrap .desc-wrap { width: 30%; height: 100%; position: absolute; top: 0; right: 0; background-color: rgba(0, 0, 0,.7); transform: translateX(105%); transition: all 0.5s; color: #efefef;}
 .slide-wrap .img-wrap:hover .desc-wrap{ transform: translateX(0%);}
 
 .desc-wrap .desc-box { display: flex; flex-direction: column; text-align: left; padding: 1em; }
