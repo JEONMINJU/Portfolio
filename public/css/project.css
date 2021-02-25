@@ -17,21 +17,19 @@ h5:after {
 
 /******** slide-container(works) *********/
 
-.line-wrapper {display: flex; justify-content: center; align-items: center;}
-
 .cont-wrapper {
-	margin-top: -10vh;
+	margin-top: -15vh;
 	width: 80%;
 	height: 60vh;
 }
-.cont-wrapper .img-title {font-size: 1.25em; font-family: 'Sunflower', sans-serif;  text-align: center; margin-bottom: 2em;}
+.cont-wrapper .img-title {font-size: 1.25em; font-family: 'Sunflower', sans-serif;  text-align: center; margin-bottom: 1em;}
 
-.slide-container {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; border: 2px solid green;}
+.slide-container {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
 .slide-container .slide-wrapper{ width: 100%; height: 100%; display: flex; overflow: hidden; border-radius: 3px;}
 .slide-container .slide-wrapper .slide-wrap{ display: flex; width: 100%; height: 100%; position: relative; }
-.slide-wrap .img-box { width: 100%; height: 100%; overflow: hidden; border: 2px solid red;}
+.slide-wrap .img-box { width: 100%; height: 100%; overflow: hidden; background-image: url(../img/weather1.jpg); background-repeat: no-repeat; background-size: cover; }
 .slide-wrap .img-box > img { width: 100%; }
-.slide-wrap .img-box .desc-box { background-color: rgba( 0,0,0,.7 ); width: 100%; height: 40%; position: absolute; bottom: 0; left: 0; transform: translateY(100%); transition: all 0.3s; color: #efefef;  }
+.slide-wrap .img-box .desc-box { background-color: rgba( 0,0,0,.7 ); width: 100%; height: 40%; position: absolute; bottom: 0; left: 0; transform: translateY(105%); transition: all 0.3s; color: #efefef;  }
 .slide-wrap .img-box:hover .desc-box { transform: translateY(0%); }
 
 .slide-wrap .img-box .desc-box .box { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;  }
@@ -40,6 +38,13 @@ h5:after {
 .slide-wrap .img-box .desc-box .box1 .descript { line-height: 1.5; }
 .slide-wrap .img-box .desc-box .box2 { flex: 33.333% 0 0; flex-direction: column; width: 100%; height: 80%; padding: 1em; border-right: 1px solid rgba(200, 200, 200, 0.7); }
 .slide-wrap .img-box .desc-box .box3 { flex: 33.333% 0 0; flex-direction: column; width: 100%; height: 80%; padding: 1em; }
+
+.mobile-desc { background-color: rgba( 0,0,0,.6 ); width: 100%; height: 70%; position: absolute; bottom: 0; left: 0; color: #efefef; text-align: left; display: none; }
+.mobile-desc .box { display: flex; flex-direction: column; padding: 1em; }
+.mobile-desc .box > p { color: #95b9e3; }
+.mobile-desc .box1 { border-bottom: 1px solid rgba(200, 200, 200, 0.7); }
+.mobile-desc .box1 .descript { line-height: 1.5; }
+.mobile-desc .box2 { border-bottom: 1px solid rgba(200, 200, 200, 0.7);  }
 
 
 
@@ -102,14 +107,32 @@ h5:after {
 }
 
 @media screen and (max-width:991px) {
+	.slide-container {width: 100%; height: 90%;}
+	.slide-wrap .img-box .desc-box { text-align: center; }
+	.slide-wrap .img-box .desc-box h5 { font-size: 1.125em; }
+	.slide-wrap .img-box .desc-box .box1 .descript { line-height: 1.2; font-size: 0.875em; padding: 0 0.75em; }
 
+  .slide-wrap .img-box .desc-box .box1 { padding: 0.5em;}
+  .slide-wrap .img-box .desc-box .box1 .descript { line-height: 1.5; }
+  .slide-wrap .img-box .desc-box .box2 .program { line-height: 1.5; }
 }
 
 @media screen and (max-width:767px) {
-	.slide-container { }
+
+	.slide-wrap .img-box .desc-box { text-align: center; }
+	.slide-wrap .img-box .desc-box h5 { font-size: 1em; }
+  .slide-wrap .img-box .desc-box .box1 { padding: 0.5em;}
+	.slide-wrap .img-box .desc-box .box1 .descript { line-height: 1.3; font-size: 0.875em; padding: 0 0.75em; }
+  .slide-wrap .img-box .desc-box .box2 { padding: 0.5em; }
+  .slide-wrap .img-box .desc-box .box3 { padding: 0.5em; }
+  .slide-wrap .img-box .desc-box .box3 a { line-height: 1.3; }
+
+
 }
 
 @media screen and (max-width:575px) {
-	.slide-container { }
+	.slide-container {width: 100%; height: 92%;}
 	.slide-wrap .img-wrap .img-box .img-title { font-size: 1em; }
+	.slide-wrap .img-box .desc-box { display: none; }
+	.mobile-desc { display: block; }
 }

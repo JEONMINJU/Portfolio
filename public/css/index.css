@@ -1,4 +1,9 @@
 /******** .main-wrapper *********/
+.cont-wrapper {
+	width: 100%;
+	height: 75vh;
+}
+
 .main-wrapper { font-family: 'Fjalla One', sans-serif; margin-top: 8em; }
 .main-wrapper .main-wrap {
 	display: flex; align-items: center;
