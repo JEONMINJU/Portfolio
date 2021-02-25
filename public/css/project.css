@@ -16,18 +16,26 @@ h5:after {
 }
 
 /******** slide-container(works) *********/
-.slide-container .img-title { position: absolute; top: 12%; left: 50%; transform: translate(-50%, -50%); font-size: 1.25em; font-family: 'Sunflower', sans-serif; }
 
-.slide-container { display: flex; justify-content: center; align-items: center; }
-.slide-container .slide-wrapper{ width: 70%; display: flex; overflow: hidden; margin-top: 3.25em; border-radius: 3px;}
-.slide-container .slide-wrapper .slide-wrap{ display: flex; width: 100%; position: relative; }
-.slide-wrap .img-box { width: 100%; overflow: hidden; }
+.line-wrapper {display: flex; justify-content: center; align-items: center;}
+
+.cont-wrapper {
+	margin-top: -10vh;
+	width: 80%;
+	height: 60vh;
+}
+.cont-wrapper .img-title {font-size: 1.25em; font-family: 'Sunflower', sans-serif;  text-align: center; margin-bottom: 2em;}
+
+.slide-container {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; border: 2px solid green;}
+.slide-container .slide-wrapper{ width: 100%; height: 100%; display: flex; overflow: hidden; border-radius: 3px;}
+.slide-container .slide-wrapper .slide-wrap{ display: flex; width: 100%; height: 100%; position: relative; }
+.slide-wrap .img-box { width: 100%; height: 100%; overflow: hidden; border: 2px solid red;}
 .slide-wrap .img-box > img { width: 100%; }
 .slide-wrap .img-box .desc-box { background-color: rgba( 0,0,0,.7 ); width: 100%; height: 40%; position: absolute; bottom: 0; left: 0; transform: translateY(100%); transition: all 0.3s; color: #efefef;  }
 .slide-wrap .img-box:hover .desc-box { transform: translateY(0%); }
 
 .slide-wrap .img-box .desc-box .box { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;  }
-.slide-wrap .img-box .desc-box .box > h5 { color: rgba(200, 200, 200, 0.7);}
+.slide-wrap .img-box .desc-box .box > h5 { color: #f8e1c3;}
 .slide-wrap .img-box .desc-box .box1 { flex: 33.333% 0 0; flex-direction: column; width: 100%; height: 80%; padding: 1em 2.5em 1em 3em; border-right: 1px solid rgba(200, 200, 200, 0.7); }
 .slide-wrap .img-box .desc-box .box1 .descript { line-height: 1.5; }
 .slide-wrap .img-box .desc-box .box2 { flex: 33.333% 0 0; flex-direction: column; width: 100%; height: 80%; padding: 1em; border-right: 1px solid rgba(200, 200, 200, 0.7); }
