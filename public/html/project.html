@@ -10,11 +10,12 @@
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/common.css">
 	<link rel="stylesheet" href="../css/project.css">
+	<link rel="stylesheet" href="../js/swiper-bundle.min.js">
 	<script src="../js/jquery-3.5.1.min.js"></script>
-
+	<script src="../js/swiper-bundle.min.js"></script>
 </head>
 <body>
-<!--main-wrapper-->
+<!--all-wrapper-->
 <div class="all-wrapper">
 	<div class="line-wrapper">
 		<!-- 네비 배경 -->
@@ -23,7 +24,7 @@
 		<header class="header-wrapper">
 			<!-- 로고 -->
 			<div class="logo-wrap">
-				LOGO
+				<img src="../img/jmj-logo.png" alt="logo-img">
 			</div>
 			<!-- navi (depth 1) -->
 			<div class="navi-wrap">
@@ -40,11 +41,11 @@
 		</header>
 
 		<!-- slide-container -->
-		<div class="cont-wrapper">
-			<div class="img-title">AJAX 통신을 이용한 날씨앱</div>
+		<section class="cont-wrapper">
 			<div class="slide-container swiper-container">
 				<div class="slide-wrapper swiper-wrapper">
-					<div class="slide-wrap swiper-slide">
+					<div class="slide swiper-slide">
+						<div class="img-title">AJAX 통신을 이용한 날씨앱</div>
 						<div class="img-box">
 							<!-- desc-box -->
 							<div class="desc-box">
@@ -86,45 +87,55 @@
 								</div>
 							</div>
 							<!-- mobile-container //-->
-							
-							<!-- mobile-desc // -->
-						</div>
+						</div> <!-- img-box //-->
 					</div>
+
+					<!-- slide-wrap // -->
+				</div> 
+				<!-- slide-wrapper // -->
+					<!-- 슬라이드 버튼 -->
+					<div class="bt-arrow swiper-button-next">〉</div>
+					<div class="bt-arrow swiper-button-prev">〈</div>
 				</div>
-			</div>
-		</div>
-		<!-- slide-container// -->
+				<!-- slide-container// -->
+
+			</section>
+			<!-- cont-wrapper //-->
+
+
+
 
 		<!-- sub-navi (depth2) -->
 		<div class="sub-navi-wrapper">
-			<div class="circle-wrapper">
-				<div class="sub-navi">
-					<div class="title">PUBLISHING</div>
-					<div class="dot">●</div>
+				<div class="circle-wrapper">
+					<div class="sub-navi">
+						<div class="title">PUBLISHING</div>
+						<div class="dot">●</div>
+					</div>
+					<div class="sub-navi">
+						<div class="title">FRONT END</div>
+						<div class="dot">●</div>
+					</div>
+					<div class="sub-navi">
+						<div class="title">BACK END</div>
+						<div class="dot">●</div>
+					</div>
+					<div class="sub-navi">
+						<div class="title">PUBLISHING</div>
+						<div class="dot">●</div>
+					</div>
+					<div class="sub-navi">
+						<div class="title">FRONT END</div>
+						<div class="dot">●</div>
+					</div>
+					<div class="sub-navi">
+						<div class="title">BACK END</div>
+						<div class="dot">●</div>
+					</div>
 				</div>
-				<div class="sub-navi">
-					<div class="title">FRONT END</div>
-					<div class="dot">●</div>
-				</div>
-				<div class="sub-navi">
-					<div class="title">BACK END</div>
-					<div class="dot">●</div>
-				</div>
-				<div class="sub-navi">
-					<div class="title">PUBLISHING</div>
-					<div class="dot">●</div>
-				</div>
-				<div class="sub-navi">
-					<div class="title">FRONT END</div>
-					<div class="dot">●</div>
-				</div>
-				<div class="sub-navi">
-					<div class="title">BACK END</div>
-					<div class="dot">●</div>
-				</div>
-			</div>
 		</div>
-	</div><!--line-wrap -->
+
+	</div> <!-- line-wrapper// -->
 
 	<!-- modal -->
 	<div class="modal-container">
@@ -139,7 +150,7 @@
 						<div class="name">min ju Jeon</div>
 						<span class="deco-line"></span>
 					</div>
-
+	
 					<div class="comment-box">
 						<div class="deco-shape">↓</div>
 						<div class="typing-txt">
@@ -148,7 +159,7 @@
 								<li>끊임 없이 무.한. 충전(성장)중 인</li>
 								<li>프론트엔드 개발자 전민주 입니다.</li>
 							</ul>
-
+	
 						</div>
 						<div class="typing">
 							<ul>
@@ -157,9 +168,9 @@
 								<li></li>
 							</ul>
 						</div>
-
+	
 					</div>
-
+	
 					<div class="info-box">
 						<div class="phone"><img src="../img/phone-call.png" alt="폰번호"> +82 10-2331-2732</div>
 						<div class="email"><img src="../img/mail.png" alt="이메일"> junielle.jeon@gmail.com</div>
@@ -175,8 +186,8 @@
 	</div>
 	<!-- modal // -->
 
-</div><!--main-wrapper//-->
-
+</div>
+<!-- all-wrapper// -->
 <script type="module" src="../js/common.js"></script>
 <script type="module" src="../js/project.js"></script>
 </body>

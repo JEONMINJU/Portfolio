@@ -1,0 +1,21 @@
+[{
+	"id": 1,
+	"link": "https://jmju-weather.web.app/",
+	"img-title": "AJAX 통신을 이용한 날씨앱",
+	"title": "Explanation",
+	"descript": "OpenWeatherMap의 API를 사용하여 날씨 정보를 JSON형태로 받아와 AJAX통신을 통한 날씨앱을 제작하였습니다.",
+	"Used": "Used",
+	"program": "HTML5, CSS3, JS, jQuery, AJAX, JSON",
+	"Link": "Link",
+	"background-img": "../img/weather.jpg"
+},{
+	"id": 2,
+	"link": "https://jmju-weather.web.app/",
+	"img-title": "AJAX 통신을 이용한 날씨앱",
+	"title": "Explanation",
+	"descript": "OpenWeatherMap의 API를 사용하여 날씨 정보를 JSON형태로 받아와 AJAX통신을 통한 날씨앱을 제작하였습니다.",
+	"Used": "Used",
+	"program": "HTML5, CSS3, JS, jQuery, AJAX, JSON",
+	"Link": "Link",
+	"background-img": "../img/weather.jpg"
+}]
