@@ -10,9 +10,19 @@ window.onload = function() {
 }
 
 $(".circle-wrapper > .sub-navi").click(onSubClick);
+$(".swiper-slide .mobile-container .mobile-btn").click(onMoDescShow);
 
+$(".circle-wrapper .title").click(onProject);
 
 /****************** 이벤트콜백 *******************/
+function onProject() {
+	var name = $(this).data('project');
+	$('.slide-wrapper').css("display", "none");
+	$('.slide-wrapper[title='+name+']').css("display", "flex");
+}
+
+
+
 
 var oldId = 0;
 function onSubClick() {
@@ -38,6 +48,15 @@ function onSubClick() {
 	}
 }
 
+
+
+function onMoDescShow() {
+	$(".swiper-slide .mobile-container").toggleClass('active');
+
+}
+
+
+
 /****************** 사용자함수 *******************/
 
 
@@ -49,7 +68,7 @@ var swiper = new Swiper('.cont-wrapper .swiper-container', {
 		clickable: true,
 	},
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.bt-next',
+		prevEl: '.bt-prev',
 	},
 });

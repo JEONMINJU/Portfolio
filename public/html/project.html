@@ -20,11 +20,10 @@
 	<div class="line-wrapper">
 		<!-- 네비 배경 -->
 		<div class="line-head"></div>
-
 		<header class="header-wrapper">
 			<!-- 로고 -->
 			<div class="logo-wrap">
-				<img src="../img/logo1.png" alt="logo-img" style="width: 75px;">
+				<img src="#" alt="logo-img">
 			</div>
 			<!-- navi (depth 1) -->
 			<div class="navi-wrap">
@@ -39,12 +38,13 @@
 				<a href="#" class="about">About</a>
 			</div>
 		</header>
-
 		<!-- slide-container -->
-		<section class="cont-wrapper">
-			<div class="slide-container swiper-container">
-				<div class="slide-wrapper swiper-wrapper">
-					<div class="swiper-slide">
+		<section class="cont-wrapper" >
+
+			<div class="slide-container swiper-container" >
+				<div class="slide-wrapper swiper-wrapper" title="front">
+					<!-- swiper-slide -->	
+					<div class="swiper-slide" >
 						<div class="img-title">AJAX 통신을 이용한 날씨앱</div>
 						<div class="slide-bg" style="background-image: url(../img/weather1.jpg);"></div>
 							<!-- desc-box(PC)-->
@@ -64,20 +64,40 @@
 									</div>
 								</div>
 							</div>
-						</div>
-
-					<div class="swiper-slide" style="background-image: url(../img/weather2.jpg);" >
-						<div class="img-title">투두 앱</div>
+							<!-- mobile-container(모바일) -->
+							<div class="mobile-container">
+								<button class="mobile-btn">⏏︎</button>
+								<div class="mobile-desc">
+									<div class="box box1">
+										<p class="title">Explanation</p>
+										<div class="descript">OpenWeatherMap의 API를 사용하여 날씨 정보를 JSON형태로받아와 AJAX통신을 통한 날씨앱을 제작하였습니다.</div>
+									</div>
+									<div class="box box2">
+										<p class="used">Used</p>
+										<div class="program">HTML5, CSS3, JS, jQuery, AJAX, JSON</div>
+									</div>
+									<div class="box box3">
+										<p class="link">Link</p>
+										<a href="https://jmju-weather.web.app/" target="_blank" class="img-link">https:/jmju-weather.web.app/</a>
+									</div>
+								</div>
+							</div>
+					</div>
+					<!-- swiper-slide// -->
+					<!-- swiper-slide -->	
+					<div class="swiper-slide">
+						<div class="img-title">Firebase기반의 Todo앱</div>
+						<div class="slide-bg" style="background-image: url(../img/todo.jpg);"></div>
 							<!-- desc-box(PC)-->
 							<div class="desc-box">
 								<div class="box">
 									<div class="box box1">
 										<h5 class="title">Explanation</h5>
-										<div class="descript">OpenWeatherMap의 API를 사용하여 날씨 정보를 JSON형태로 받아와 AJAX통신을 통한 날씨앱을 제작하였습니다.</div>
+										<div class="descript">Firebase기반의 구글로그인과 백엔드, 모바일 화면을 고려한 반응형 작업을 하였습니다.</div>
 									</div>
 									<div class="box box2">
 										<h5 class="Used">Used</h5>
-										<div class="program">HTML5, CSS3, JS, jQuery, AJAX, JSON</div>
+										<div class="program">HTML5, CSS3, JS, jQuery, Firebase, Moment</div>
 									</div>
 									<div class="box box3">
 										<h5 class="Link">Link</h5>
@@ -87,39 +107,38 @@
 							</div>
 							<!-- mobile-container(모바일) -->
 							<div class="mobile-container">
-								<div class="checkbox-container color">
-									<input type="checkbox" checked id="toggle">
-									<label for="toggle"></label>
-									<div class="mobile-desc">
-										<div class="box box1">
-											<p class="title">Explanation</p>
-											<div class="descript">OpenWeatherMap의 API를 사용하여 날씨 정보를 JSON형태로 받아와 AJAX통신을 통한 날씨앱을 제작하였습니다.</div>
-										</div>
-										<div class="box box2">
-											<p class="used">Used</p>
-											<div class="program">HTML5, CSS3, JS, jQuery, AJAX, JSON</div>
-										</div>
-										<div class="box box3">
-											<p class="link">Link</p>
-											<a href="https://jmju-weather.web.app/" target="_blank" class="img-link">https://jmju-weather.web.app/</a>
-										</div>
+								<button class="mobile-btn">⏏︎</button>
+								<div class="mobile-desc">
+									<div class="box box1">
+										<p class="title">Explanation</p>
+										<div class="descript">Firebase기반의 구글로그인과 백엔드, 모바일 화면을 고려한 반응형 작업을 하였습니다.</div>
+									</div>
+									<div class="box box2">
+										<p class="used">Used</p>
+										<div class="program">HTML5, CSS3, JS, jQuery, Firebase, Moment</div>
+									</div>
+									<div class="box box3">
+										<p class="link">Link</p>
+										<a href="https://jmju-weather.web.app/" target="_blank" class="img-link">https:/jmju-weather.web.app/</a>
 									</div>
 								</div>
 							</div>
 					</div>
-
-					<div class="swiper-slide" style="background-image: url(../img/text-bg1.jpg);" >
-						<div class="img-title">AJAX 통신을 이용한 날씨앱</div>
+					<!-- swiper-slide// -->
+					<!-- swiper-slide -->	
+					<div class="swiper-slide">
+						<div class="img-title">Vue를 이용한 날씨앱</div>
+						<div class="slide-bg" style="background-image: url(../img/weather11.jpg);"></div>
 							<!-- desc-box(PC)-->
 							<div class="desc-box">
 								<div class="box">
 									<div class="box box1">
 										<h5 class="title">Explanation</h5>
-										<div class="descript">OpenWeatherMap의 API를 사용하여 날씨 정보를 JSON형태로 받아와 AJAX통신을 통한 날씨앱을 제작하였습니다.</div>
+										<div class="descript">Vue.js의 GUI를 기반으로 오늘의 날씨, 주간 날씨 정보를 얻을 수 있는 SPA를 제작하였습니다.</div>
 									</div>
 									<div class="box box2">
 										<h5 class="Used">Used</h5>
-										<div class="program">HTML5, CSS3, JS, jQuery, AJAX, JSON</div>
+										<div class="program">Vue.js, Pug, SCSS, Moment</div>
 									</div>
 									<div class="box box3">
 										<h5 class="Link">Link</h5>
@@ -129,37 +148,35 @@
 							</div>
 							<!-- mobile-container(모바일) -->
 							<div class="mobile-container">
-								<div class="checkbox-container color">
-									<input type="checkbox" checked id="toggle">
-									<label for="toggle"></label>
-									<div class="mobile-desc">
-										<div class="box box1">
-											<p class="title">Explanation</p>
-											<div class="descript">OpenWeatherMap의 API를 사용하여 날씨 정보를 JSON형태로 받아와 AJAX통신을 통한 날씨앱을 제작하였습니다.</div>
-										</div>
-										<div class="box box2">
-											<p class="used">Used</p>
-											<div class="program">HTML5, CSS3, JS, jQuery, AJAX, JSON</div>
-										</div>
-										<div class="box box3">
-											<p class="link">Link</p>
-											<a href="https://jmju-weather.web.app/" target="_blank" class="img-link">https://jmju-weather.web.app/</a>
-										</div>
+								<button class="mobile-btn">⏏︎</button>
+								<div class="mobile-desc">
+									<div class="box box1">
+										<p class="title">Explanation</p>
+										<div class="descript">Vue.js의 GUI를 기반으로 오늘의 날씨, 주간 날씨 정보를 얻을 수 있는 SPA를 제작하였습니다.</div>
+									</div>
+									<div class="box box2">
+										<p class="used">Used</p>
+										<div class="program">Vue.js, Pug, SCSS, Moment</div>
+									</div>
+									<div class="box box3">
+										<p class="link">Link</p>
+										<a href="https://jmju-weather.web.app/" target="_blank" class="img-link">https:/jmju-weather.web.app/</a>
 									</div>
 								</div>
 							</div>
 					</div>
-				
-				</div> 
-				<!-- slide-wrapper // -->
-					<!-- 슬라이드 버튼 -->
-					<div class="bt-arrow swiper-button-next">〉</div>
-					<div class="bt-arrow swiper-button-prev">〈</div>
+					<!-- swiper-slide// -->	
+
 				</div>
-				<!-- slide-container// -->
+				<!-- slide-wrapper // -->
+
+				</div><!-- slide-container// -->
+				<!-- 슬라이드 버튼 -->
+				<div class="bt-arrow bt-next">〉</div>
+				<div class="bt-arrow bt-prev">〈</div>
 
 			</section>
-			<!-- cont-wrapper //-->
+			<!-- cont-wrapper (슬라이드끝)//-->
 
 
 
@@ -168,32 +185,31 @@
 		<div class="sub-navi-wrapper">
 				<div class="circle-wrapper">
 					<div class="sub-navi">
-						<div class="title">PUBLISHING</div>
+						<div class="title" data-project="publishing">PUBLISHING</div>
 						<div class="dot">●</div>
 					</div>
 					<div class="sub-navi">
-						<div class="title">FRONT END</div>
+						<div class="title" data-project="frontend">FRONT END</div>
 						<div class="dot">●</div>
 					</div>
 					<div class="sub-navi">
-						<div class="title">BACK END</div>
+						<div class="title" data-project="backend">BACK END</div>
 						<div class="dot">●</div>
 					</div>
 					<div class="sub-navi">
-						<div class="title">PUBLISHING</div>
+						<div class="title" data-project="publishing">PUBLISHING</div>
 						<div class="dot">●</div>
 					</div>
 					<div class="sub-navi">
-						<div class="title">FRONT END</div>
+						<div class="title" data-project="frontend">FRONT END</div>
 						<div class="dot">●</div>
 					</div>
 					<div class="sub-navi">
-						<div class="title">BACK END</div>
+						<div class="title" data-project="backend">BACK END</div>
 						<div class="dot">●</div>
 					</div>
 				</div>
 		</div>
-
 	</div> <!-- line-wrapper// -->
 
 	<!-- modal -->
