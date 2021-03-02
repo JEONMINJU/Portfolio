@@ -24,7 +24,7 @@
 		<header class="header-wrapper">
 			<!-- 로고 -->
 			<div class="logo-wrap">
-				<img src="../img/jmj-logo.png" alt="logo-img">
+				<img src="../img/logo1.png" alt="logo-img" style="width: 75px;">
 			</div>
 			<!-- navi (depth 1) -->
 			<div class="navi-wrap">
@@ -44,10 +44,9 @@
 		<section class="cont-wrapper">
 			<div class="slide-container swiper-container">
 				<div class="slide-wrapper swiper-wrapper">
-					<div class="slide swiper-slide">
+					<div class="swiper-slide" style="background-image: url(../img/weather1.jpg);">
 						<div class="img-title">AJAX 통신을 이용한 날씨앱</div>
-						<div class="img-box">
-							<!-- desc-box -->
+							<!-- desc-box(PC)-->
 							<div class="desc-box">
 								<div class="box">
 									<div class="box box1">
@@ -64,7 +63,27 @@
 									</div>
 								</div>
 							</div>
-							<!-- desc-box //-->
+						</div>
+
+					<div class="swiper-slide" style="background-image: url(../img/weather2.jpg);" >
+						<div class="img-title">투두 앱</div>
+							<!-- desc-box(PC)-->
+							<div class="desc-box">
+								<div class="box">
+									<div class="box box1">
+										<h5 class="title">Explanation</h5>
+										<div class="descript">OpenWeatherMap의 API를 사용하여 날씨 정보를 JSON형태로 받아와 AJAX통신을 통한 날씨앱을 제작하였습니다.</div>
+									</div>
+									<div class="box box2">
+										<h5 class="Used">Used</h5>
+										<div class="program">HTML5, CSS3, JS, jQuery, AJAX, JSON</div>
+									</div>
+									<div class="box box3">
+										<h5 class="Link">Link</h5>
+										<a href="https://jmju-weather.web.app/" target="_blank" class="img-link">https://jmju-weather.web.app/</a>
+									</div>
+								</div>
+							</div>
 							<!-- mobile-container(모바일) -->
 							<div class="mobile-container">
 								<div class="checkbox-container color">
@@ -86,11 +105,50 @@
 									</div>
 								</div>
 							</div>
-							<!-- mobile-container //-->
-						</div> <!-- img-box //-->
 					</div>
 
-					<!-- slide-wrap // -->
+					<div class="swiper-slide" style="background-image: url(../img/text-bg1.jpg);" >
+						<div class="img-title">AJAX 통신을 이용한 날씨앱</div>
+							<!-- desc-box(PC)-->
+							<div class="desc-box">
+								<div class="box">
+									<div class="box box1">
+										<h5 class="title">Explanation</h5>
+										<div class="descript">OpenWeatherMap의 API를 사용하여 날씨 정보를 JSON형태로 받아와 AJAX통신을 통한 날씨앱을 제작하였습니다.</div>
+									</div>
+									<div class="box box2">
+										<h5 class="Used">Used</h5>
+										<div class="program">HTML5, CSS3, JS, jQuery, AJAX, JSON</div>
+									</div>
+									<div class="box box3">
+										<h5 class="Link">Link</h5>
+										<a href="https://jmju-weather.web.app/" target="_blank" class="img-link">https://jmju-weather.web.app/</a>
+									</div>
+								</div>
+							</div>
+							<!-- mobile-container(모바일) -->
+							<div class="mobile-container">
+								<div class="checkbox-container color">
+									<input type="checkbox" checked id="toggle">
+									<label for="toggle"></label>
+									<div class="mobile-desc">
+										<div class="box box1">
+											<p class="title">Explanation</p>
+											<div class="descript">OpenWeatherMap의 API를 사용하여 날씨 정보를 JSON형태로 받아와 AJAX통신을 통한 날씨앱을 제작하였습니다.</div>
+										</div>
+										<div class="box box2">
+											<p class="used">Used</p>
+											<div class="program">HTML5, CSS3, JS, jQuery, AJAX, JSON</div>
+										</div>
+										<div class="box box3">
+											<p class="link">Link</p>
+											<a href="https://jmju-weather.web.app/" target="_blank" class="img-link">https://jmju-weather.web.app/</a>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+				
 				</div> 
 				<!-- slide-wrapper // -->
 					<!-- 슬라이드 버튼 -->
