@@ -11,15 +11,20 @@ window.onload = function() {
 
 $(".circle-wrapper > .sub-navi").click(onSubClick);
 $(".swiper-slide .mobile-container .mobile-btn").click(onMoDescShow);
+$(".swiper-slide .slide-bg").click(onMoDescHide);
 
-$(".circle-wrapper .title").click(onProject);
-
+/* $(".circle-wrapper .title").click(onProject);
+$(".circle-wrapper .title").eq(1).trigger('click');
+ */
 /****************** 이벤트콜백 *******************/
-function onProject() {
+
+
+/* function onProject() {
 	var name = $(this).data('project');
-	$('.slide-wrapper').css("display", "none");
-	$('.slide-wrapper[title='+name+']').css("display", "flex");
+	$('.slide-container').css("display", "none");
+	$('.slide-container[title='+name+']').css("display", "flex");
 }
+ */
 
 
 
@@ -52,9 +57,11 @@ function onSubClick() {
 
 function onMoDescShow() {
 	$(".swiper-slide .mobile-container").toggleClass('active');
-
 }
 
+function onMoDescHide() {
+	$(".swiper-slide .mobile-container").removeClass('active');
+}
 
 
 /****************** 사용자함수 *******************/

@@ -16,6 +16,8 @@ $(".modal-wrapper .close-btn").click(onModalHide);
 $(".modal-container").click(onModalHide);
 $(".modal-wrapper").click(onModalWrapperClick);
 
+$(".charger-wrapper .thunder img").mouseover(onHoverBoxShow);
+$(".charger-wrapper .thunder img").mouseleave(onHoverBoxHide);
 
 
 /****************** 이벤트콜백 *******************/
@@ -77,6 +79,13 @@ function onNaviAct() {
 	idx = $(this).index();
 	$(".navi-wrap span").removeClass('active');
 	$(".navi-wrap span").eq(idx).addClass('active');
+}
+
+function onHoverBoxShow() {
+	$(".charger-wrapper .thunder .hover-box").css("display","block").animate("stop");
+}
+function onHoverBoxHide() {
+	$(".charger-wrapper .thunder .hover-box").css("display","none");
 }
 
 /****************** 사용자함수 *******************/

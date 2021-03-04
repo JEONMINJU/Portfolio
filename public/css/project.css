@@ -45,7 +45,7 @@ h5:after {
 .swiper-slide { display: flex; width: 100%; flex-direction: column; }
 
 .swiper-slide .img-title { font-size: 1.25em; font-family: 'Sunflower', sans-serif;  text-align: center; margin-bottom: 1em;
-}
+ margin-top: 0.75em;}
 .swiper-slide .slide-bg {
 	flex-grow: 1;
 	background-repeat: no-repeat;
@@ -74,7 +74,7 @@ h5:after {
 .bt-next { right: 1.5em; }
 .bt-prev { left: 1.5em; }
 
-.swiper-slide .mobile-container { width: 100%;  display: flex; flex-direction: column; position: absolute; bottom: 0; left: 0%; transform: translateY(93%); transition: all 0.3s; display: none; }
+.swiper-slide .mobile-container { width: 100%;  display: flex; flex-direction: column; position: absolute; bottom: 0; left: 0%; transform: translateY(89%); transition: all 0.3s; display: none; }
 .swiper-slide .mobile-container.active { transform: translateY(0%); } 
 .swiper-slide .mobile-container .mobile-btn { border: none; background-color: transparent; color: rgba( 0,0,0,.7 ); outline: none; font-size: 1.5em; margin-left: 50%; transform: translate(-50%); }
 .swiper-slide .mobile-container .mobile-desc {  background-color: rgba( 0,0,0,.7 ); width: 100%; color: #efefef; }

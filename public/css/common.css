@@ -15,7 +15,6 @@ body {
 	line-height: 0.95;
 }
 
-/* .wrapper {max-width: 1200px; margin: auto; position: relative;} */
 a:link,
 a:visited,
 a:active,
@@ -85,7 +84,7 @@ a:hover {
 }
 
 .header-wrapper .logo-wrap img { 
-	width: 100px;
+	width: 70px;
 }
 
 
@@ -112,7 +111,7 @@ a:hover {
 
 .header-wrapper .about-wrap {
 	position: absolute;
-	top: 2em;
+	top: 1.75em;
 	right: 2.5em;
 }
 
@@ -204,7 +203,7 @@ a:hover {
 .name-box .name {
 	margin: 5px;
 	font-size: 0.875em;
-	padding-top: 3em;
+	padding-top: 2em;
 	padding-bottom: 0.5em;
 }
 
@@ -306,7 +305,7 @@ ul {
 	margin-bottom: 3px;
 }
 
-.contact .deco-line { /*  width: 50px; height: 3px; background-color:rgb(231, 131, 91); margin: auto; border-radius: 3px; display: block;  */
+.contact .deco-line {  width: 50px; height: 3px; background-color:rgb(231, 131, 91); margin: auto; border-radius: 3px; display: block;
 }
 
 .modal-wrapper .copyright {
@@ -338,12 +337,15 @@ ul {
 	}
 
 	.header-wrapper .logo-wrap {
-		left: 2em;
-		font-size: 0.875em;
+		left: 0.75em;
+	}
+	.header-wrapper .logo-wrap img { 
+		width: 50px;
 	}
 
 	.header-wrapper .about-wrap {
 		right: 2em;
+		top: 1.5em;
 		font-size: 0.875em;
 	}
 }
