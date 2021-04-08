@@ -50,7 +50,7 @@ function onProject() {
 var oldId = 0;
 function onSubClick() {
 	var id = $(this).index();
-	console.log(id);
+
 	if (id == 0) {
 		$(".circle-wrapper").css('transform', 'translateY(-50%) rotate(-120deg)');
 	}
