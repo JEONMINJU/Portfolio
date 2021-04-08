@@ -15,10 +15,12 @@ body {
 	line-height: 0.95;
 }
 
-a:link,
-a:visited,
-a:active,
-a:hover {
+/* 앵커 가상 클래스 */
+a:link, /* 는 아직 방문하지 않은 링크를 나타낸다. */
+a:visited, /* 방문한 링크 */
+a:active, /* :active : 요소가 활성화 되었거나 클릭 되었을 때 */
+a:hover /* :hover : 사용자가 해당 요소에 커서를 가져다 댔을 때 */
+{
 	color: inherit;
 	text-decoration: none;
 }
@@ -216,7 +218,7 @@ a:hover {
 
 .contact .comment-box {
 	width: 15em;
-	height: 10em;
+	height: 9em;
 	background-color: #eaeaea;
 	display: flex;
 	justify-content: center;
@@ -275,7 +277,7 @@ ul {
 .contact .info-box {
 	margin-top: 2em;
 	align-items: left;
-	margin-left: 5em;
+	margin-left: 5.5em;
 }
 
 .info-box .phone img {
@@ -296,17 +298,27 @@ ul {
 .info-box .git {
 	font-size: 0.875em;
 	margin-top: 1.625em;
-	padding-bottom: 2.25em;
 }
 
 .info-box .git img {
 	width: 20px;
 	padding-right: 7px;
-	margin-bottom: 3px;
+	margin-bottom: 2px;
 }
 
-.contact .deco-line {  width: 50px; height: 3px; background-color:rgb(231, 131, 91); margin: auto; border-radius: 3px; display: block;
+.info-box .blog {
+	font-size: 0.875em;
+	margin-top: 1.625em;
+/* 	padding-bottom: 2.25em; */
 }
+
+.info-box .blog img {
+	width: 20px;
+	padding-right: 7px;
+}
+
+/* .contact .deco-line {  width: 50px; height: 3px; background-color:rgb(231, 131, 91); margin: auto; border-radius: 3px; display: block;
+} */
 
 .modal-wrapper .copyright {
 	text-align: center;
