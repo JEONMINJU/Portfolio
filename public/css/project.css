@@ -17,7 +17,7 @@ h5:after {
 .box1::after {
 	content:"";
 	display: inline-block;
-	height: 12em;
+	height: 20em;
 	border-right: 1px solid rgba(200, 200, 200, .7);
 	width: 100%;
 	position: absolute;
@@ -28,7 +28,7 @@ h5:after {
 .box2::after {
 	content:"";
 	display: inline-block;
-	height: 12em;
+	height: 20em;
 	border-right: 1px solid rgba(200, 200, 200, .7);
 	width: 100%;
 	position: absolute;
