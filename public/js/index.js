@@ -34,8 +34,6 @@ function onNaviUp() {
 		$(".main-wrapper").show();
 		$(".charger-wrapper").show();
 	}
-	
-
 }
 
 function onModalShow() {
